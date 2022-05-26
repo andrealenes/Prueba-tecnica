@@ -14,7 +14,7 @@ function ingresarParticipanteUno() {
 
 function ingresarParticipanteDos() {
     const input = document.getElementById("segundoParticipante");
-    document.getElementById("partDos").innerHTML = input;
+    document.getElementById("partDoss").innerHTML = input;
 };
 
 /*leemos la entrada del resultado */

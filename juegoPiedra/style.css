@@ -112,11 +112,6 @@ header {
 
 
 }
-.retry-btn:hover{
-    font-size: 1rem;
-    width: 160px;
-    height: 60px;
-}
 
 footer {
     position: relative;

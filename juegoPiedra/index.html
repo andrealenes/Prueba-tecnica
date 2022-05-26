@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego piedra, papel o tijera</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Martel:wght@300;400;600;700&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Piedra, papel o tijera</h1>
+    </header>
+
+    <form class="container-form">
+        <label for="primerParticipante">Ingresa el primer participante: </label>
+        <input id="inputName" type="text" />
+        <button class="form-btn" type="button" onclick="ingresarParticipanteUno()">Ingresar</button>
+
+        <label for="segundoParticipante">Ingresa el segundo participante: </label>
+        <input id="inputName" type="text" />
+        <button class="form-btn" type="button" onclick="ingresarParticipanteDos()">Ingresar</button>
+
+    </form>
+
+    <section class="container-opciones">
+        <section class="container-opciones">
+            <div id="partUno">
+                Participante 1
+            </div>
+            <div class="opcion" id="papel">
+                <img src="static/papel.png" alt="papel">
+            </div>
+
+            <div class="opcionUno" id="piedra">
+                <img src="static/piedra.png" alt="piedra">
+            </div>
+
+            <div class="opcionUno" id="tijera">
+                <img src="static/tijera.png" alt="tijera">
+            </div>
+
+        </section>
+        <section class="container-opciones__usuarioDos">
+            <div id="partDos">
+                Participante 2
+            </div>
+            <div class="opcionDos" id="papelU2">
+                <img src="static/papel.png" alt="papel">
+            </div>
+
+            <div class="opcionDos" id="piedraU2">
+                <img src="static/piedra.png" alt="piedra">
+            </div>
+
+            <div class="opcionDos" id="tijeraU2">
+                <img src="static/tijera.png" alt="tijera">
+            </div>
+
+        </section>
+    </section>
+    <div class="container-resultado">
+        <img id="usuarioDos-img" src="static/user1.png">
+
+        <div id="resultado">
+            Elige una opcion y empieza a jugar!
+        </div>
+
+        <img id="usuarioUno-img" src="static/user2.png">
+
+    </div>
+    <section>
+        <button class="retry-btn" type="button" id="retry-btn" onclick="retrybtn()">Volver a empezar</button>
+    </section>
+    <footer>
+        <p>Andrea Lenes <span class="icon"></span></p>
+    </footer>
+</body>
+<script src="./index.js"></script>
+
+</html>
